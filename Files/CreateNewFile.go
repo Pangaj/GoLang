@@ -17,5 +17,8 @@ func main() {
 		fmt.Println("Error in creating file")
 	}
 
-	file.Write([]byte("New File Created :)"))
+	_,err = file.Write([]byte("New File Created :)"))
+	if err != nil {
+		fmt.Println("Error in writing into the file :(")
+	}
 }
