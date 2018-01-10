@@ -1,1 +1,2 @@
 New File Created :)
+Before getting file info. Don't append any content after getting the file stats
