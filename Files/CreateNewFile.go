@@ -16,6 +16,7 @@ func main() {
 	if err != nil {
 		fmt.Println("Error in creating file")
 	}
+	defer file.close()
 
 	_,err = file.Write([]byte("New File Created :)"))
 	if err != nil {
