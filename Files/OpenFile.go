@@ -25,6 +25,7 @@ func main() {
 	if err != nil {
 		fmt.Println("File error while opening the file : ", err)
 	}
+	defer file.close();
 
 	fileInfo, err := file.Stat()
 	if err != nil {
