@@ -15,6 +15,7 @@ func main() {
 	if err != nil {
 		fmt.Println("Error in opening the dir file")
 	}
+	defer dir.close()
 
 	fileInfos, err := dir.Readdir(-1)
 	if err != nil {
